@@ -1,3 +1,3 @@
 # sjt-mbed.github.io
-PolyC Prototype
-<a href="polyc">PolyC</a>
+
+<a href="polyc">PolyC Prototype</a>
