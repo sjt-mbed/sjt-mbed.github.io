@@ -2,4 +2,4 @@
 
 PWA GitHub pages Publish branch
 
-<a href="polyc/index.html">PolyC</a>
+<a href="polyc">PolyC</a>
