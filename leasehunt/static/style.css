@@ -40,7 +40,7 @@ buttons {
   left: -200px;
   overflow: auto;
   z-index: 2;
-  background-color: #F20075;
+  //background-color: #F20075;
   transition: transform 0.2s;
 }
 

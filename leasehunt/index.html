@@ -11,8 +11,8 @@
     <script src="static/jquery.loadTemplate.min.js"></script>
     <script src="static/script.js"></script>
   </head>
-  <body>
-    <div id="sidedrawer" class="mui--no-user-select">
+  <body class="hide-sidedrawer">
+    <div id="sidedrawer" class="mui--no-user-select mui--bg-accent-light">
       <div id="sidedrawer-brand" class="mui--appbar-line-height">
         <span class="mui--text-title">Brand.io</span>
       </div>
@@ -45,10 +45,13 @@
       </ul>
     </div>
     <header id="header">
-      <div class="mui-appbar mui--appbar-line-height" style="background-color:#93228d;">
+      <!-- <div class="mui-appbar mui--appbar-line-height" style="background-color:#93228d;"> -->
+      <div class="mui-appbar mui--appbar-line-height mui--bg-primary-light">
         <div class="mui-container-fluid">
           <a class="sidedrawer-toggle mui--visible-xs-inline-block mui--visible-sm-inline-block js-show-sidedrawer">☰</a>
           <a class="sidedrawer-toggle mui--hidden-xs mui--hidden-sm js-hide-sidedrawer">☰ LeaseHunt.io</a>
+          <!-- <button class="mui-btn mui-btn--danger mui--pull-right">Join</button> -->
+          <button class="mui-btn mui-btn--raised mui--pull-right">Log In</button>
           <span class="mui--text-title mui--visible-xs-inline-block mui--visible-sm-inline-block">Brand.io</span>
         </div>
       </div>
