@@ -45,45 +45,28 @@
       </ul>
     </div>
     <header id="header">
-      <!-- <div class="mui-appbar mui--appbar-line-height" style="background-color:#93228d;"> -->
       <div class="mui-appbar mui--appbar-line-height mui--bg-primary-light">
         <div class="mui-container-fluid">
           <a class="sidedrawer-toggle mui--visible-xs-inline-block mui--visible-sm-inline-block js-show-sidedrawer">☰</a>
           <a class="sidedrawer-toggle mui--hidden-xs mui--hidden-sm js-hide-sidedrawer">☰ LeaseHunt.io</a>
-          <!-- <button class="mui-btn mui-btn--danger mui--pull-right">Join</button> -->
-          <button class="mui-btn mui-btn--raised mui--pull-right">Log In</button>
+          <button class="mui-btn mui-btn--raised mui--pull-right">Login</button>
+          <button class="mui-btn mui-btn--danger mui--pull-right">Join</button>
           <span class="mui--text-title mui--visible-xs-inline-block mui--visible-sm-inline-block">Brand.io</span>
         </div>
       </div>
     </header>
     <div id="content-wrapper">
       <div class="mui--appbar-height"></div>
-      <div class="mui-container-fluid">
+      <div class="mui-container">
+        <div id="ResultsDisplay">
+          <div></div>
+        </div>
         <button id="PerformSearch" class="mui-btn mui-btn--accent">Search</button>
-        <table id="ResultsDisplay" class="mui-table mui-table--bordered">
-            <thead>
-                <tr>
-                    <th>id</th>
-                    <th>name</th>
-                    <th>price</th>
-                    <th>tags</th>
-                    <th>coordinates</th>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
         <div id="ResultsPaging" style="display: none;">
             <button data-action="prev" class="mui-btn mui-btn--fab mui-btn--accent"><</button>
             <button data-action="next" class="mui-btn mui-btn--fab mui-btn--accent">></button>
         </div>
       </div>
     </div>
-    <footer id="footer" style="background-color:#a040a0;>
-      <div class="mui-container-fluid" >
-        <br>
-        Made with ♥ by <a href="https://www.muicss.com">MUI</a>
-      </div>
-    </footer>
   </body>
 </html>

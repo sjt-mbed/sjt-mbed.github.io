@@ -12,7 +12,8 @@
         "warehouseLocation": {
             "latitude": -78.75,
             "longitude": 20.4
-        }
+        },
+        "bg-image" : "images/bg-image.jpg"
     },
     {
         "id": 2,
@@ -27,7 +28,8 @@
         "warehouseLocation": {
             "latitude": -78.75,
             "longitude": 20.4
-        }
+        },
+        "bg-image" : "images/bg-image.jpg"
     },
     {
         "id": 3,
@@ -42,7 +44,8 @@
         "warehouseLocation": {
             "latitude": 54.4,
             "longitude": -32.7
-        }
+        },
+        "bg-image" : "images/bg-image.jpg"
     },
     {
         "id": 4,
@@ -57,7 +60,8 @@
         "warehouseLocation": {
             "latitude": -78.75,
             "longitude": 20.4
-        }
+        },
+        "bg-image" : "images/bg-image.jpg"
     },
     {
         "id": 5,
@@ -72,7 +76,8 @@
         "warehouseLocation": {
             "latitude": -78.75,
             "longitude": 20.4
-        }
+        },
+        "bg-image" : "images/bg-image.jpg"
     },
     {
         "id": 6,
@@ -87,7 +92,8 @@
         "warehouseLocation": {
             "latitude": 54.4,
             "longitude": -32.7
-        }
+        },
+        "bg-image" : "images/bg-image.jpg"
     },
     {
         "id": 7,
@@ -102,7 +108,8 @@
         "warehouseLocation": {
             "latitude": 54.4,
             "longitude": -32.7
-        }
+        },
+        "bg-image" : "images/bg-image.jpg"
     },
     {
         "id": 8,
@@ -117,7 +124,8 @@
         "warehouseLocation": {
             "latitude": 54.4,
             "longitude": -32.7
-        }
+        },
+        "bg-image" : "images/bg-image.jpg"
     },
     {
         "id": 9,
@@ -132,7 +140,8 @@
         "warehouseLocation": {
             "latitude": 54.4,
             "longitude": -32.7
-        }
+        },
+        "bg-image" : "images/bg-image.jpg"
     },
     {
         "id": 10,
@@ -147,7 +156,8 @@
         "warehouseLocation": {
             "latitude": 54.4,
             "longitude": -32.7
-        }
+        },
+        "bg-image" : "images/bg-image.jpg"
     },
     {
         "id": 11,
@@ -162,7 +172,8 @@
         "warehouseLocation": {
             "latitude": 54.4,
             "longitude": -32.7
-        }
+        },
+        "bg-image" : "images/bg-image.jpg"
     },
     {
         "id": 12,
@@ -177,7 +188,8 @@
         "warehouseLocation": {
             "latitude": -78.75,
             "longitude": 20.4
-        }
+        },
+        "bg-image" : "images/bg-image.jpg"
     },
     {
         "id": 13,
@@ -192,7 +204,8 @@
         "warehouseLocation": {
             "latitude": -78.75,
             "longitude": 20.4
-        }
+        },
+        "bg-image" : "images/bg-image.jpg"
     },
     {
         "id": 14,
@@ -207,7 +220,8 @@
         "warehouseLocation": {
             "latitude": -78.75,
             "longitude": 20.4
-        }
+        },
+        "bg-image" : "images/bg-image.jpg"
     },
     {
         "id": 15,
@@ -222,7 +236,8 @@
         "warehouseLocation": {
             "latitude": -78.75,
             "longitude": 20.4
-        }
+        },
+        "bg-image" : "images/bg-image.jpg"
     },
     {
         "id": 16,
@@ -237,7 +252,8 @@
         "warehouseLocation": {
             "latitude": -78.75,
             "longitude": 20.4
-        }
+        },
+        "bg-image" : "images/bg-image.jpg"
     },
     {
         "id": 17,
@@ -252,7 +268,8 @@
         "warehouseLocation": {
             "latitude": -78.75,
             "longitude": 20.4
-        }
+        },
+        "bg-image" : "images/bg-image.jpg"
     },
     {
         "id": 18,
@@ -267,7 +284,8 @@
         "warehouseLocation": {
             "latitude": -78.75,
             "longitude": 20.4
-        }
+        },
+        "bg-image" : "images/bg-image.jpg"
     },
     {
         "id": 19,
@@ -282,7 +300,8 @@
         "warehouseLocation": {
             "latitude": -78.75,
             "longitude": 20.4
-        }
+        },
+        "bg-image" : "images/bg-image.jpg"
     },
     {
         "id": 20,
@@ -297,6 +316,7 @@
         "warehouseLocation": {
             "latitude": -78.75,
             "longitude": 20.4
-        }
+        },
+        "bg-image" : "images/bg-image.jpg"
     }
 ]

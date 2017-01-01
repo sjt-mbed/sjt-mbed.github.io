@@ -90,7 +90,7 @@ jQuery(function($) {
   });
 
   function displayPage(pageNo) {
-      $("#ResultsDisplay tbody").loadTemplate("static/SearchResult.html", data, {
+      $("#ResultsDisplay div").loadTemplate("static/SearchResult.html", data, {
         paged: true, pageNo: pageNo, elemPerPage: resultsPerPage,
           success: function() { console.log('success');},
           complete: function(){ console.log('complete')},
