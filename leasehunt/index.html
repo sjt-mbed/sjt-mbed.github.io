@@ -11,44 +11,99 @@
     <script src="static/jquery.loadTemplate.min.js"></script>
     <script src="static/script.js"></script>
   </head>
-  <body class="hide-sidedrawer">
+  <!-- <body class="hide-sidedrawer"> -->
+  <body>
     <div id="sidedrawer" class="mui--no-user-select mui--bg-accent-light">
       <div id="sidedrawer-brand" class="mui--appbar-line-height">
-        <span class="mui--text-title">Brand.io</span>
+        <span class="mui--text-title">Filters</span>
       </div>
       <div class="mui-divider"></div>
-      <ul>
-        <li>
-          <strong>Category 1</strong>
-          <ul>
-            <li class="sideMenuItem"><a href="#">Item 1</a></li>
-            <li class="sideMenuItem"><a href="#">Item 2</a></li>
-            <li class="sideMenuItem"><a href="#">Item 3</a></li>
-          </ul>
-        </li>
-        <li>
-          <strong>Category 2</strong>
-          <ul>
-            <li class="sideMenuItem"><a href="#">Item 1</a></li>
-            <li class="sideMenuItem"><a href="#">Item 2</a></li>
-            <li class="sideMenuItem"><a href="#">Item 3</a></li>
-          </ul>
-        </li>
-        <li>
-          <strong>Category 3</strong>
-          <ul>
-            <li class="sideMenuItem"><a href="#">Item 1</a></li>
-            <li class="sideMenuItem"><a href="#">Item 2</a></li>
-            <li class="sideMenuItem"><a href="#">Item 3</a></li>
-          </ul>
-        </li>
-      </ul>
+      <form>
+        <!-- Lease Type Selector -->
+        <div class="mui-radio">
+          <label class="mui-btn mui-btn--small mui-btn--primary">
+            <input type="radio"
+                   name="terms"
+                   id="LoPay"
+                   value="lopay"
+                   checked>
+            Payments
+          </label>
+          <label class="mui-btn mui-btn--small mui-btn--primary">
+            <input type="radio"
+                   name="terms"
+                   id="LoDo"
+                   value="lodo">
+            Down
+          </label>
+          <label class="mui-btn mui-btn--small mui-btn--primary">
+              <input type="radio"
+                     name="terms"
+                     id="ToCo"
+                     value="toco">
+              Cost
+          </label>
+        </div>
+        <div class="mui-divider"></div>
+        <!-- Lease Type Selector -->
+        <div class="mui-radio">
+          <label class="mui-btn mui-btn--small mui-btn--primary">
+            <input type="radio"
+                   name="type"
+                   id="Regular"
+                   value="regular"
+                   checked>
+            Regular
+          </label>
+          <label class="mui-btn mui-btn--small mui-btn--primary">
+            <input type="radio"
+                   name="type"
+                   id="Luxury"
+                   value="luxury">
+            Luxury
+          </label>
+          <label class="mui-btn mui-btn--small mui-btn--primary">
+              <input type="radio"
+                     name="type"
+                     id="Sports"
+                     value="sports">
+              Sports
+          </label>
+        </div>
+        <div class="mui-divider"></div>
+        <!-- Auto Body Selector -->
+        <div class="mui-radio">
+          <label class="mui-btn mui-btn--small mui-btn--primary">
+            <input type="radio"
+                   name="body"
+                   id="Sedan"
+                   value="sedan"
+                   checked>
+            Sedan
+          </label>
+          <label class="mui-btn mui-btn--small mui-btn--primary">
+            <input type="radio"
+                   name="body"
+                   id="Suv"
+                   value="suv">
+            SUV
+          </label>
+          <label class="mui-btn mui-btn--small mui-btn--primary">
+              <input type="radio"
+                     name="body"
+                     id="PickUp"
+                     value="pickup">
+              Pick Up
+          </label>
+        </div>
+      </form>
     </div>
     <header id="header">
       <div class="mui-appbar mui--appbar-line-height mui--bg-primary-light">
         <div class="mui-container-fluid">
           <a class="sidedrawer-toggle mui--visible-xs-inline-block mui--visible-sm-inline-block js-show-sidedrawer">☰</a>
-          <a class="sidedrawer-toggle mui--hidden-xs mui--hidden-sm js-hide-sidedrawer">☰ LeaseHunt.io</a>
+          <a class="sidedrawer-toggle mui--hidden-xs mui--hidden-sm js-hide-sidedrawer">☰</a>
+          <span class="mui--text-dark mui--text-title">LeaseHunt.io</span>
           <button class="mui-btn mui-btn--raised mui--pull-right">Login</button>
           <button class="mui-btn mui-btn--danger mui--pull-right">Join</button>
           <span class="mui--text-title mui--visible-xs-inline-block mui--visible-sm-inline-block">Brand.io</span>

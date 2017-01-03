@@ -33,7 +33,7 @@ jQuery(function($) {
 
   $('.js-show-sidedrawer').on('click', showSidedrawer);
   $('.js-hide-sidedrawer').on('click', hideSidedrawer);
-  $(".sideMenuItem").on('click', hideSidedrawer);
+  //$(".sideMenuItem").on('click', hideSidedrawer);
 
 
   // ==========================================================================
@@ -72,6 +72,15 @@ jQuery(function($) {
       productLink: function (value) {
           return "Products/" + value;
       }
+  });
+
+  $("#LoPay, #LoDo, #ToCo").click(function () {
+    var searchResultsFilename = "static/" + this.value + ".txt";
+    //console.log(searchResultsFilename);
+    $.get(searchResultsFilename, function (response) {
+        data = response
+        displayPage(1);
+    }, "json");
   });
 
   $("#PerformSearch").click(function () {
