@@ -52,7 +52,7 @@ jQuery(function($) {
 // Templating logic
 //================
   var page = 1;
-  var resultsPerPage = 10;
+  var resultsPerPage = 30;
   var data = [];
   $.addTemplateFormatter({
       currency: function (value, template) {
@@ -77,17 +77,11 @@ jQuery(function($) {
   $("#LoPay, #LoDo, #ToCo").click(function () {
     var searchResultsFilename = "static/" + this.value + ".txt";
     //console.log(searchResultsFilename);
-    $.get(searchResultsFilename, function (response) {
-        data = response
-        displayPage(1);
-    }, "json");
+    renderSearchResults(searchResultsFilename);
   });
 
   $("#PerformSearch").click(function () {
-      $.get("static/searchResults.txt", function (response) {
-          data = response
-          displayPage(1);
-      }, "json");
+      renderSearchResults("static/searchResults.txt");
   });
 
   $("[data-action='next']").click(function () {
@@ -97,6 +91,12 @@ jQuery(function($) {
   $("[data-action='prev']").click(function () {
       displayPage(page - 1);
   });
+  function renderSearchResults(source) {
+    $.get(source, function (response) {
+        data = response
+        displayPage(1);
+    }, "json");
+  }
 
   function displayPage(pageNo) {
       $("#ResultsDisplay div").loadTemplate("static/SearchResult.html", data, {
@@ -119,4 +119,5 @@ jQuery(function($) {
       $("#ResultsDisplay").show();
       $("#ResultsPaging").show();
   }
+  renderSearchResults("static/searchResults.txt");
 });
