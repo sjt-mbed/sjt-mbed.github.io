@@ -8,6 +8,9 @@
     <link href="static/style.css" rel="stylesheet" type="text/css" />
     <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="//cdn.muicss.com/mui-latest/js/mui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.2/dist/sheetrock.min.js"></script>
+    <!-- <script src="//chriszarate.github.io/sheetrock/dist/sheetrock.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
     <script src="static/jquery.loadTemplate.min.js"></script>
     <script src="static/script.js"></script>
   </head>
@@ -118,6 +121,14 @@
             <button data-action="prev" class="mui-btn mui-btn--fab mui-btn--accent"><</button>
             <button data-action="next" class="mui-btn mui-btn--fab mui-btn--accent">></button>
         </div>
+        <h4>NL Home Run Leaders</h4>
+        <ol id="hr">
+          <script id="hr-template" type="text/x-handlebars-template">
+            <li>
+              <strong>{{cells.Manufacturer}} {{cells.Model}} {{cells.Year}}</strong>, {{cells.MonthlyPayments}}, {{cells.DownPayment}}
+            </li>
+          </script>
+        </ol>
       </div>
     </div>
   </body>

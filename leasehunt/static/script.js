@@ -119,5 +119,20 @@ jQuery(function($) {
       $("#ResultsDisplay").show();
       $("#ResultsPaging").show();
   }
-  renderSearchResults("static/searchResults.txt");
+//  renderSearchResults("static/searchResults.txt");
+
+  // Define spreadsheet URL.
+  var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1yGGtS1K4ad9QYinpgT6r5eV_eN2_U_46ubAYz69sV7U/edit#gid=0';
+
+  // Compile the Handlebars template for HR leaders.
+  var HRTemplate = Handlebars.compile($('#hr-template').html());
+
+  // Load top five HR leaders.
+  $('#hr').sheetrock({
+    url: mySpreadsheet,
+    query: "select A,B,C,G,H order by G asc",
+    fetchSize: 10,
+    rowTemplate: HRTemplate
+  });
+
 });
