@@ -121,14 +121,21 @@
             <button data-action="prev" class="mui-btn mui-btn--fab mui-btn--accent"><</button>
             <button data-action="next" class="mui-btn mui-btn--fab mui-btn--accent">></button>
         </div>
-        <h4>NL Home Run Leaders</h4>
-        <ol id="hr">
+        <div id="hr">
           <script id="hr-template" type="text/x-handlebars-template">
-            <li>
-              <strong>{{cells.Manufacturer}} {{cells.Model}} {{cells.Year}}</strong>, {{cells.MonthlyPayments}}, {{cells.DownPayment}}
-            </li>
+            <div class="mui-card xs-shadow">
+              <div class="card-front">
+                <p><strong>{{cells.Manufacturer}} {{cells.Model}}</strong></p>
+              </div>
+              <div class="card-back">
+                <p><strong>Model Year</strong> {{cells.Year}} </p>
+                <p><strong>Monthly</strong> ${{cells.MonthlyPayments}} </p>
+                <p><strong>Down</strong> ${{cells.DownPayment}}</p>
+                <p><strong>Total</strong> {{cells.TotalCost}}</p>
+              </div>
+            </div>
           </script>
-        </ol>
+        </div>
       </div>
     </div>
   </body>
